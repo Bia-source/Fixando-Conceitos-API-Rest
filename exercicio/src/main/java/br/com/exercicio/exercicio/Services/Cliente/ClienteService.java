@@ -6,11 +6,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
-@Service
+// joanna watala
+@Service("ClienteService")
 public class ClienteService {
     @Autowired
-    ClienteRepositorys repository;
+     ClienteRepositorys repository;
 
     @PostMapping
     public ResponseEntity saveCliente (@RequestBody Cliente cliente){
