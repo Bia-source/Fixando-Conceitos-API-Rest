@@ -16,7 +16,7 @@ public class Cliente {
     private String nome;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id_cliente")
     private Long id;
 }
