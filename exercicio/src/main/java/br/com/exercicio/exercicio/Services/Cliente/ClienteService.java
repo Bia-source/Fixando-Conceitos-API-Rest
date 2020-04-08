@@ -1,6 +1,7 @@
 package br.com.exercicio.exercicio.Services.Cliente;
 
 import br.com.exercicio.exercicio.Models.Cliente;
+import br.com.exercicio.exercicio.Repositorys.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Service("ClienteService")
 public class ClienteService {
     @Autowired
-     ClienteRepositorys repository;
+    ClienteRepository repository;
 
     @PostMapping
     public ResponseEntity saveCliente (@RequestBody Cliente cliente){

@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ClienteRepositorys extends JpaRepository <Cliente, Long> {
+public interface ClienteRepositorys  {
     List<Cliente> findByNome(String nome);
 }
